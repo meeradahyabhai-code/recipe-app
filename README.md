@@ -2,6 +2,8 @@
 
 A personal recipe management app built with React and Vite. Store, organize, and discover recipes with AI-powered features.
 
+![Recipe Library](docs/screenshot.png)
+
 ## Features
 
 - **Recipe Library** — Browse, search, and filter recipes by cuisine and meal type
