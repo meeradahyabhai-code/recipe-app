@@ -1,0 +1,167 @@
+:root {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+
+  /* Dark theme (default) — brown, tan & forest green */
+  --bg-body: #1a1510;
+  --bg-surface: #2a2318;
+  --bg-nav: #221c14;
+  --bg-input: #2a2318;
+  --bg-deep: #33291d;
+  --bg-chat-user: #33291d;
+  --bg-chat-assistant: #221c14;
+  --bg-version: #221c14;
+
+  --text-primary: #e8ddd0;
+  --text-heading: #f5efe8;
+  --text-muted: #9c8e7c;
+  --text-label: #c4a97a;
+  --text-link: #8db580;
+
+  --border-color: #3d3428;
+  --border-subtle: #2a2318;
+  --card-border: #3d3428;
+
+  --accent: #4a7c59;
+  --accent-hover: #3b6347;
+
+  --btn-secondary-bg: #3d3428;
+  --btn-secondary-text: #c4a97a;
+  --btn-secondary-hover: #4a3f30;
+
+  --tag-bg: #3d3428;
+  --tag-text: #c4a97a;
+  --tag-cuisine-bg: #3b4a2e;
+  --tag-cuisine-text: #a8cc8f;
+  --tag-type-bg: #4a3f30;
+  --tag-type-text: #d4b88a;
+
+  --filter-border: #4a3f30;
+  --filter-text: #9c8e7c;
+
+  --nutrition-bg: #33291d;
+  --nutrition-label: #c4a97a;
+
+  --utensil-bg: #3b4a2e;
+  --utensil-text: #a8cc8f;
+
+  --empty-heading: #9c8e7c;
+  --empty-text: #7a6e5e;
+
+  --rating-empty: #4a3f30;
+
+  --shadow-accent: rgba(74, 124, 89, 0.25);
+  --filter-active-bg: rgba(74, 124, 89, 0.15);
+  --error-bg: rgba(153, 50, 50, 0.2);
+  --error-border: #8b3a3a;
+  --error-text: #e8a0a0;
+  --success-bg: rgba(74, 124, 89, 0.2);
+  --success-border: #4a7c59;
+  --success-text: #8db580;
+  --danger-bg: #6b2d2d;
+  --danger-text: #e8a0a0;
+  --danger-hover: #7d3535;
+  --star-filled: #c4a040;
+  --star-hover: #d4b050;
+
+  color: var(--text-primary);
+  background-color: var(--bg-body);
+}
+
+[data-theme="light"] {
+  --bg-body: #f5f0e8;
+  --bg-surface: #fffcf7;
+  --bg-nav: #fffcf7;
+  --bg-input: #ffffff;
+  --bg-deep: #ede4d4;
+  --bg-chat-user: #e6dcc8;
+  --bg-chat-assistant: #f0ebe0;
+  --bg-version: #f0ebe0;
+
+  --text-primary: #3a2f24;
+  --text-heading: #2a2018;
+  --text-muted: #7a6e5e;
+  --text-label: #5c4a32;
+  --text-link: #3d6b4e;
+
+  --border-color: #d4c8b0;
+  --border-subtle: #e8dcc8;
+  --card-border: #d4c8b0;
+
+  --accent: #3d6b4e;
+  --accent-hover: #2e5a3e;
+
+  --btn-secondary-bg: #ede4d4;
+  --btn-secondary-text: #5c4a32;
+  --btn-secondary-hover: #e0d4be;
+
+  --tag-bg: #ede4d4;
+  --tag-text: #6b5535;
+  --tag-cuisine-bg: #d8eacd;
+  --tag-cuisine-text: #2e5a3e;
+  --tag-type-bg: #e8dcc8;
+  --tag-type-text: #6b5535;
+
+  --filter-border: #c4b89c;
+  --filter-text: #6b5e4a;
+
+  --nutrition-bg: #ede4d4;
+  --nutrition-label: #5c4a32;
+
+  --utensil-bg: #d8eacd;
+  --utensil-text: #2e5a3e;
+
+  --empty-heading: #6b5e4a;
+  --empty-text: #8a7e6e;
+
+  --rating-empty: #c4b89c;
+
+  --shadow-accent: rgba(61, 107, 78, 0.2);
+  --filter-active-bg: rgba(61, 107, 78, 0.1);
+  --error-bg: rgba(153, 50, 50, 0.1);
+  --error-border: #a04040;
+  --error-text: #8b3a3a;
+  --success-bg: rgba(61, 107, 78, 0.12);
+  --success-border: #3d6b4e;
+  --success-text: #2e5a3e;
+  --danger-bg: #d4a0a0;
+  --danger-text: #6b2020;
+  --danger-hover: #c88888;
+  --star-filled: #b8942e;
+  --star-hover: #c8a43e;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+a {
+  color: var(--text-link);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--accent);
+}
+
+h1, h2, h3, h4 {
+  margin-top: 0;
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
