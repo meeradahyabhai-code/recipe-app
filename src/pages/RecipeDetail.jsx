@@ -38,8 +38,6 @@ export default function RecipeDetail() {
     if (recipe) {
       const scaled = scaleIngredients(recipe.ingredients || [], recipe.servings || 4, servings);
       setScaledIngredients(scaled);
-      // Clear nutrition when servings change so it re-fetches
-      setNutrition(null);
     }
   }, [servings, recipe]);
 
@@ -57,10 +55,7 @@ export default function RecipeDetail() {
   const loadNutrition = async () => {
     setNutritionLoading(true);
     try {
-      // Use the original (unscaled) ingredients for the lookup,
-      // since USDA data is per-100g and we divide by servings at the end.
-      // The servings value accounts for the user's adjusted serving count.
-      const result = await fetchNutrition(recipe.ingredients || [], servings);
+      const result = await fetchNutrition(recipe.ingredients || [], recipe.servings || 4);
       setNutrition(result);
     } catch (err) {
       setNutrition({ error: err.message, items: [], totals: null });

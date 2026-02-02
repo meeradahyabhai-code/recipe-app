@@ -100,7 +100,7 @@ export async function fetchNutrition(ingredients, servings = 1) {
     };
   }
 
-  const s = Math.max(1, servings);
+  const s = Math.max(1, parseInt(servings) || 1);
   const items = [];
   let totalCal = 0, totalProtein = 0, totalCarbs = 0, totalFat = 0, totalFiber = 0;
   let foundCount = 0;
